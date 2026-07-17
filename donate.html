@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en"><head><script>document.documentElement.classList.add('js');</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate | Project Aasraa</title>
+<meta name="description" content="Support Project Aasraa's work in disability inclusion, accessibility and gender equality. Every donation funds a real, named outcome.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#3F6B45; --green-deep:#2C4A31; --sage:#A8CBA0; --sage-soft:#DCEBD6;
+    --blue:#6FA8CC; --blue-deep:#3F7197; --rose:#EC9CAE; --rose-deep:#C25C72;
+    --peach:#F4B88B; --cream:#FAF7EF; --cream-2:#F3EEE0; --ink:#2A332B; --ink-soft:#566056;
+    --white:#ffffff; --shadow:0 18px 50px -24px rgba(44,74,49,.45); --shadow-sm:0 8px 24px -14px rgba(44,74,49,.4);
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Mulish',system-ui,sans-serif;color:var(--ink);background:var(--cream);margin:0;line-height:1.7;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4,.font-display{font-family:'Fraunces',Georgia,serif;}
+  a{color:var(--blue-deep);}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--blue-deep);outline-offset:3px;border-radius:6px;}
+  .skip-link{position:absolute;left:1rem;top:-100px;background:var(--green-deep);color:#fff;padding:.75rem 1.25rem;border-radius:0 0 12px 12px;z-index:200;transition:top .2s ease;font-weight:700;}
+  .skip-link:focus{top:0;color:#fff;}
+  .grain-cream{background:radial-gradient(900px 500px at 12% -8%,#ffffff 0%,transparent 60%),radial-gradient(800px 600px at 100% 0%,var(--sage-soft) 0%,transparent 55%),var(--cream);}
+  .btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:700;border-radius:999px;padding:.95rem 1.7rem;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;text-decoration:none;font-size:1rem;}
+  .btn:hover{transform:translateY(-3px);}
+  .btn-primary{background:var(--green);color:#fff;box-shadow:var(--shadow-sm);}
+  .btn-primary:hover{background:var(--green-deep);}
+  .btn-ghost{background:#fff;color:var(--green-deep);border:2px solid var(--sage);}
+  .btn-ghost:hover{border-color:var(--green);background:var(--sage-soft);}
+  .eyebrow{font-weight:799;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;color:var(--green);}
+  .card{background:#fff;border-radius:24px;box-shadow:var(--shadow);border:1px solid #eee7d6;}
+  .nav-link{color:var(--ink);text-decoration:none;font-weight:600;padding:.4rem .2rem;position:relative;}
+  .nav-link::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--green);transition:width .25s ease;}
+  .nav-link:hover::after,.nav-link.active::after{width:100%;}
+
+  .tier{display:flex;align-items:center;gap:20px;padding:20px 24px;border-top:1px solid #eee7d6;cursor:pointer;position:relative;}
+  .tier:first-child{border-top:none;}
+  .tier:hover{background:var(--cream);}
+  .tier input{position:absolute;inset:0;opacity:0;cursor:pointer;margin:0;}
+  .tier .amt{font-family:'Fraunces',serif;font-weight:700;font-size:1.4rem;color:var(--green-deep);min-width:110px;}
+  .tier .desc{flex:1;color:var(--ink-soft);}
+  .tier .desc b{color:var(--ink);}
+  .tier .tick{width:24px;height:24px;border-radius:50%;border:2px solid var(--sage);flex-shrink:0;position:relative;}
+  .tier input:checked ~ .tick{border-color:var(--green);background:var(--green);}
+  .tier input:checked ~ .tick::after{content:"";position:absolute;inset:5px;border-radius:50%;background:#fff;}
+  .tier.selected{background:var(--sage-soft);}
+  .freq{display:inline-flex;border:1px solid var(--sage);border-radius:999px;padding:4px;background:#fff;}
+  .freq button{border:none;background:transparent;padding:9px 22px;border-radius:999px;font-weight:700;font-size:.9rem;cursor:pointer;color:var(--ink-soft);}
+  .freq button.active{background:var(--green);color:#fff;}
+  .field input{width:100%;border-radius:12px;border:1px solid #d8e2d4;background:var(--cream);padding:.75rem 1rem;}
+  .field input:focus{border-color:var(--green);}
+</style>
+</head>
+<body class="grain-cream">
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="sticky top-0 z-50 backdrop-blur-md bg-[#FAF7EF]/85 border-b border-[#ece5d3]">
+  <nav aria-label="Primary" class="max-w-7xl mx-auto px-5 sm:px-8 h-[72px] flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-3 shrink-0" aria-label="Project Aasraa home">
+      <img src="../images/7d95122b-b50b-43d8-9b6e-c2e4033fe2fb.png" alt="" width="46" height="46" class="rounded-full ring-1 ring-[#cfe0ea]">
+      <span class="font-display text-xl font-700 text-[var(--green-deep)] leading-none">Project Aasraa<span class="block text-[10px] tracking-[.22em] uppercase font-sans font-700 text-[var(--rose-deep)] mt-1">inclusion · support · dignity</span></span>
+    </a>
+    <div class="hidden lg:flex items-center gap-7">
+      <a class="nav-link" href="index.html#about">About</a>
+      <a class="nav-link" href="index.html#work">What We Do</a>
+      <a class="nav-link" href="projects.html">Drives &amp; Projects</a>
+      <a class="nav-link active" href="donate.html">Donate</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="relative overflow-hidden">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8 pt-16 pb-10 text-center">
+    <span class="inline-flex items-center gap-2 rounded-full bg-[var(--sage-soft)] text-[var(--green-deep)] font-700 text-sm px-4 py-1.5">Give today</span>
+    <h1 class="font-display font-700 text-[var(--green-deep)] text-[2.4rem] sm:text-5xl leading-[1.1] mt-5">Fund the next chapter of someone's inclusion.</h1>
+    <p class="text-lg text-[var(--ink-soft)] mt-5 max-w-2xl mx-auto">Every rupee here goes straight into Aasraa's work on disability inclusion, accessibility and gender equality — no line item is abstract. Pick an amount below and see exactly what it does.</p>
+  </div>
+</section>
+
+<section class="pb-24">
+  <div class="max-w-3xl mx-auto px-5 sm:px-8">
+    <form id="donateForm">
+      <p class="eyebrow">Where it goes</p>
+      <h2 class="font-display text-2xl sm:text-3xl font-700 text-[var(--green-deep)] mt-2 mb-6">Choose your impact</h2>
+
+      <div class="card overflow-hidden" role="radiogroup" aria-label="Donation amount">
+        <label class="tier" for="amt500">
+          <input type="radio" name="amount" value="500" id="amt500">
+          <span class="amt">₹500</span>
+          <span class="desc"><b>Accessibility awareness kit</b> for one classroom session on inclusive design.</span>
+          <span class="tick" aria-hidden="true"></span>
+        </label>
+        <label class="tier selected" for="amt1500">
+          <input type="radio" name="amount" value="1500" id="amt1500" checked>
+          <span class="amt">₹1,500</span>
+          <span class="desc"><b>A full workshop</b> on gender equality or disability rights for a community group.</span>
+          <span class="tick" aria-hidden="true"></span>
+        </label>
+        <label class="tier" for="amt5000">
+          <input type="radio" name="amount" value="5000" id="amt5000">
+          <span class="amt">₹5,000</span>
+          <span class="desc"><b>One month of leadership training</b> for a young changemaker in our program.</span>
+          <span class="tick" aria-hidden="true"></span>
+        </label>
+        <label class="tier" for="amt15000">
+          <input type="radio" name="amount" value="15000" id="amt15000">
+          <span class="amt">₹15,000</span>
+          <span class="desc"><b>An accessibility audit</b> of a public space, with a report for the community.</span>
+          <span class="tick" aria-hidden="true"></span>
+        </label>
+        <div class="tier" style="cursor:default;">
+          <span class="amt" style="min-width:110px;">Custom</span>
+          <span class="desc field" style="display:flex;align-items:center;gap:8px;max-width:220px;">
+            <span class="text-[var(--ink-soft)] font-700">₹</span>
+            <input type="number" id="customAmt" min="1" placeholder="Enter amount">
+          </span>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between flex-wrap gap-4 mt-6">
+        <div class="freq" role="radiogroup" aria-label="Frequency">
+          <button type="button" class="active" data-freq="once">One-time</button>
+          <button type="button" data-freq="monthly">Monthly</button>
+        </div>
+        <p class="font-display text-2xl font-700 text-[var(--green-deep)]" id="summaryAmount">₹1,500 <span id="summaryFreq" class="text-sm font-sans font-600 text-[var(--ink-soft)]">one-time</span></p>
+      </div>
+
+      <div class="card p-7 lg:p-9 mt-8">
+        <h3 class="font-display text-2xl font-700 text-[var(--green-deep)]">Your details</h3>
+        <div class="grid sm:grid-cols-2 gap-4 mt-5">
+          <div class="field"><label for="fullName" class="block font-600 text-sm mb-1">Full name <span class="text-[var(--rose-deep)]">*</span></label><input id="fullName" required type="text" autocomplete="name"></div>
+          <div class="field"><label for="email" class="block font-600 text-sm mb-1">Email <span class="text-[var(--rose-deep)]">*</span></label><input id="email" required type="email" autocomplete="email"></div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4 mt-4">
+          <div class="field"><label for="phone" class="block font-600 text-sm mb-1">Phone <span class="text-[var(--ink-soft)] font-400">(optional)</span></label><input id="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="pan" class="block font-600 text-sm mb-1">PAN <span class="text-[var(--ink-soft)] font-400">(for 80G receipt)</span></label><input id="pan" type="text" maxlength="10" placeholder="ABCDE1234F"></div>
+        </div>
+        <button type="submit" class="btn btn-primary w-full justify-center mt-6">Continue to secure payment</button>
+        <p class="text-xs text-[var(--ink-soft)] mt-3">You'll be redirected to our payment partner. Aasraa never stores your card details. An 80G receipt will be emailed to you.</p>
+        <p id="successMsg" role="status" class="hidden text-center text-[var(--green)] font-700 mt-3"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-[var(--green-deep)] text-[#d9e6d6]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
+    <p>© <span id="year"></span> Project Aasraa. Inclusion · Support · Dignity.</p>
+    <div class="flex gap-5">
+      <a class="hover:text-white" href="index.html">Home</a>
+      <a class="hover:text-white" href="projects.html">Drives &amp; Projects</a>
+      <a class="hover:text-white" href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const tiers = document.querySelectorAll('.tier input[name="amount"]');
+const customAmt = document.getElementById('customAmt');
+const summaryAmount = document.getElementById('summaryAmount');
+const summaryFreq = document.getElementById('summaryFreq');
+const freqBtns = document.querySelectorAll('.freq button');
+let frequency = 'once';
+
+function updateSummary(){
+  let amt = customAmt.value > 0 ? Number(customAmt.value) : Number([...tiers].find(t=>t.checked)?.value || 0);
+  summaryAmount.childNodes[0].textContent = '₹' + amt.toLocaleString('en-IN') + ' ';
+  summaryFreq.textContent = frequency === 'monthly' ? 'every month' : 'one-time';
+  document.querySelectorAll('.tier').forEach(t => {
+    const input = t.querySelector('input[name="amount"]');
+    t.classList.toggle('selected', !!(input && input.checked && !customAmt.value));
+  });
+}
+tiers.forEach(t => t.addEventListener('change', () => { customAmt.value=''; updateSummary(); }));
+customAmt.addEventListener('input', updateSummary);
+freqBtns.forEach(b => b.addEventListener('click', () => {
+  freqBtns.forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  frequency = b.dataset.freq;
+  updateSummary();
+}));
+document.getElementById('donateForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const msg = document.getElementById('successMsg');
+  msg.textContent = 'Thanks — this is a demo form. Connect a payment gateway (Razorpay/Instamojo) to accept real donations.';
+  msg.classList.remove('hidden');
+});
+updateSummary();
+</script>
+
+</body></html>
